@@ -1,0 +1,103 @@
+.contact {
+  padding: 35px 0 35px;
+  max-width: 1200px;
+  margin: auto;
+  /* min-height: 91vh; */
+  display: flex;
+  place-items: center;
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.contact__header {
+  text-align: center;
+  /* max-width: 40%; */
+}
+
+.contact__heading {
+  position: relative;
+  padding-bottom: 12px;
+  /* color: #3bb9e0; */
+  /* color: #ff5368; */
+  color: rgba(39, 38, 38, 0.8);
+  font-size: 2.3rem;
+  font-weight: 850;
+}
+
+.contact__heading::before {
+  margin: auto;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 8px;
+  background: #ebebec;
+  border-radius: 10px;
+}
+
+.contact__text {
+  margin: 1rem 0 0;
+  /* color: #3bb9e0; */
+  /* color: #ff5368; */
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 860px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details {
+    order: 1;
+    border-top: 1px solid rgb(224, 221, 221);
+    margin: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .contact__form {
+    order: 0;
+  }
+
+  .contact__form {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .contact__header {
+    text-align: center;
+    /* max-width: 40%; */
+  }
+
+  .contact__heading {
+    font-size: 2rem;
+  }
+
+  .contact__heading::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    background: #3bb9e0;
+  }
+}
+
+.contact .MuiCardContent-root,
+.contact .MuiTypography-root {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500;
+}

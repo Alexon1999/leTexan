@@ -1,0 +1,48 @@
+.product {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.product img {
+  max-width: 20%;
+  object-fit: contain;
+}
+
+.product--info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.product--info p {
+  margin: 0;
+}
+
+.product--info-title {
+  font-size: 1.2rem;
+}
+
+.product--info-prix {
+  font-size: 15px;
+}
+
+.product--quantite {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.product--quantite button {
+  margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+  .product--info-title {
+    font-size: 1rem;
+  }
+}

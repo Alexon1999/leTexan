@@ -1,0 +1,47 @@
+.felicitation {
+  height: 91vh;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  text-align: center;
+}
+
+.felicitation__container {
+  position: relative;
+  padding: 2rem 10px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 17px 4px #e6e6e6;
+  max-width: 800px;
+  width: 100%;
+  margin: 10px;
+}
+
+.felicitation__svg {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.felicitation__container h1 {
+  color: rgb(240, 106, 150);
+}
+
+.felicitation__container h2 {
+  color: rgb(97, 97, 97);
+}
+.felicitation__container h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.felicitation__container h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+.felicitation__container p {
+  color: rgb(60, 96, 214);
+  color: rgb(240, 106, 150);
+}

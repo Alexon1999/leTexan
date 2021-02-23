@@ -1,0 +1,107 @@
+.commande-en-cours {
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.commande-en-cours__card {
+  padding: 1rem;
+  background-color: rgb(245, 245, 245);
+  margin: 0 0 1.5rem;
+  border-radius: 10px;
+}
+
+.commande-en-cours__card-ref {
+  color: rgb(102, 100, 100);
+}
+
+.commande-en-cours .commande-en-cours__card-heading {
+  font-size: 1.2rem;
+  color: rgb(138, 134, 134);
+  margin-bottom: 1rem;
+}
+
+.commande-en-cours__card-totale {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  font-size: 1.2rem;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(87, 84, 250);
+}
+.commande-en-cours__card-commentaire {
+  color: rgb(248, 38, 84);
+}
+
+.commande-en-cours img {
+  max-width: 75px;
+  max-height: 75px;
+  object-fit: contain;
+}
+
+.commande-en-cours__card-product {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin: 10px 0;
+}
+
+.commande-en-cours__card-product-title,
+.commande-en-cours__card-product h2 {
+  margin: 0;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+.commande-en-cours__card-product h2 {
+  margin-left: 0.5rem;
+}
+.commande-en-cours__card-product__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+}
+
+.commande-en-cours__card-product__info::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 0%;
+  transform: translateX(10%);
+  height: 3px;
+  background-color: rgb(78, 80, 79);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.commande-en-cours__card-product.finish
+  .commande-en-cours__card-product__info::before {
+  width: 90%;
+  opacity: 0.6;
+}
+
+.commande-en-cours__card-product-icones {
+  margin-left: 20px;
+}
+
+.commande-en-cours__card-product-icone {
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+.commande-en-cours__card-product-icone:last-child {
+  margin-left: 10px;
+}
+.commande-en-cours__card-product-icone.fa-times {
+  color: rgb(238, 96, 96);
+}
+.commande-en-cours__card-product-icone.fa-check {
+  color: rgb(45, 236, 103);
+}

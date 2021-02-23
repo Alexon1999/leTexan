@@ -1,0 +1,72 @@
+.alerts {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 99;
+  /* height: 80vh;
+  padding: 1rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  pointer-events: none; */
+}
+
+.alert {
+  width: 350px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 2px 4px 9px 0px #656161;
+  position: relative;
+  overflow: hidden;
+}
+
+.alert > img {
+  max-width: 70px;
+  /* height: auto; */
+  max-height: 100px;
+  object-fit: contain;
+  padding: 0.8rem;
+}
+
+.alert > p {
+  margin: 0;
+}
+
+.alert > p > span {
+  color: #e4ae25;
+}
+
+.alert > .close {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  cursor: pointer;
+  pointer-events: all;
+  font-size: 15px;
+}
+
+.alert .progress {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.alert .progress-bar {
+  background-color: #dadada;
+}
+
+@media (max-width: 550px) {
+  .alerts {
+    right: 10px;
+  }
+
+  .alert {
+    width: 300px;
+  }
+}

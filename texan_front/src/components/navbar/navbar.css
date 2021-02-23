@@ -1,0 +1,136 @@
+.navbar {
+  position: fixed !important;
+  top: 0;
+  z-index: 999;
+  background: transparent;
+  height: 80px;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  transition: background-color 0.5s ease;
+}
+
+.navbar.active {
+  /* background: linear-gradient(90deg, #eb2735 0%, #eb123a 100%); */
+  background: #eb123a;
+}
+.navbar.sticky {
+  position: sticky !important;
+  /* background: linear-gradient(90deg, #eb2735 0%, #eb123a 100%); */
+  background: #eb123a;
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 8vh; */
+  /* padding: 6px 5px 8px 5px; */
+  width: 95%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.navbar__logo-container {
+  /* width: 150px; */
+}
+
+.navbar__logo {
+  width: 90px;
+  object-fit: contain;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+.navbar__links a {
+  text-decoration: none !important;
+  color: rgb(223, 223, 223);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.navbar__links-basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__links a.basket {
+  /* font-size: 1.3rem; */
+  position: relative;
+}
+
+.navbar__links a.basket span {
+  position: absolute;
+  top: -16px;
+  left: 12%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+}
+
+.navbar__links-basket .MuiSvgIcon-root {
+  color: rgb(233, 233, 233);
+}
+
+.navbar__links a.active,
+.navbar__links a:hover {
+  color: #ff5368;
+}
+.navbar.sticky .navbar__links a,
+.navbar.active .navbar__links a,
+.navbar.active .navbar__links .navbar__links-basket .MuiSvgIcon-root,
+.navbar.sticky .navbar__links .navbar__links-basket .MuiSvgIcon-root {
+  color: #fda3ae;
+}
+.navbar.sticky .navbar__links a.active,
+.navbar.sticky .navbar__links a:hover,
+.navbar.active .navbar__links a.active,
+.navbar.active .navbar__links a:hover,
+.navbar.sticky .navbar__links-basket .MuiIconButton-root:hover .MuiSvgIcon-root,
+.navbar.active .navbar__links-basket .MuiIconButton-root:hover .MuiSvgIcon-root,
+.navbar.sticky .navbar__links-basket.active .MuiSvgIcon-root {
+  color: rgb(233, 233, 233);
+}
+
+@media (max-width: 1250px) {
+  .navbar__links {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar__links {
+    width: 65%;
+  }
+}
+
+@media (max-width: 938px) {
+  .navbar__links {
+    width: 70%;
+  }
+}
+
+@media (max-width: 938px) {
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar {
+    background: linear-gradient(90deg, #eb2735 0%, #eb123a 100%);
+  }
+}
+@media (max-width: 600px) {
+  .navbar__container {
+    height: 40px;
+  }
+
+  .navbar__logo {
+    width: 70px;
+    object-fit: contain;
+  }
+}

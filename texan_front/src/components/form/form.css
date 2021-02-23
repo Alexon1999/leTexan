@@ -1,0 +1,28 @@
+form {
+  max-width: 600px;
+  background: white;
+  text-align: left;
+  /* padding: 10px 40px; */
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.submit {
+  text-align: center !important;
+  background: rgb(77, 76, 76) !important;
+}
+
+.error {
+  display: block;
+  width: 100%;
+  color: #ff0062;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.error:last-of-type {
+  margin-bottom: 8px;
+}

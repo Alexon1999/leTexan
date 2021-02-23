@@ -1,0 +1,29 @@
+.footerMobile__a-propos-de-nous {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerMobile__a-propos-de-nous__image-container {
+  margin-bottom: 1rem;
+  width: 150px;
+}
+
+.footerMobile__a-propos-de-nous__image-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.footerMobile__telechargement,
+.footerMobile__contacts {
+  border-right: 0 !important;
+  border-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+.footerMobile__contacts .footer__suivez-nous {
+  padding-top: 5px;
+  text-align: center;
+}

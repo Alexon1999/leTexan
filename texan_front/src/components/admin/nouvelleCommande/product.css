@@ -1,0 +1,12 @@
+.nouvelle__commande__product > div {
+  display: flex;
+}
+
+.nouvelle__commande__product h1 {
+  font-size: 1.5rem;
+}
+
+.nouvelle__commande__product-quantite {
+  color: rgb(53, 49, 49);
+  margin-left: 1rem;
+}

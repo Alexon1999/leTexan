@@ -1,0 +1,72 @@
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.contact-details .MuiPaper-root:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__icones {
+  color: rgb(82, 76, 76);
+}
+
+@media (max-width: 1080px) {
+  .contact-details .MuiPaper-root {
+    width: 80%;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-details {
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
+  .contact-details .MuiPaper-root {
+    width: 85%;
+  }
+}
+@media (max-width: 860px) {
+  .contact-details {
+    padding-left: 0;
+  }
+  .contact-details .MuiPaper-root {
+    width: 250px !important;
+  }
+
+  .contact-details {
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .contact-details .MuiCard-root {
+    margin: 1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-details {
+    display: block !important;
+    text-align: center;
+  }
+
+  .contact-details .MuiCard-root {
+    width: 100% !important;
+    margin: 1rem 0 !important;
+  }
+
+  .contact-details .MuiCard-root:last-of-type {
+    /* display: none; */
+  }
+
+  .contact-details .MuiCard-root .MuiTypography-root {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,7 @@
+.adminPage {
+  position: relative;
+}
+
+.adminPage__container {
+  display: flex;
+}
